@@ -152,7 +152,7 @@ p {
   width: 12rem;
   text-align: center;
   margin: 0 auto;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 /* section */
 .section {
@@ -192,95 +192,17 @@ p {
   margin-top: 2rem;
   width: 15rem;
   display: flex;
-  justify-content: space-between;
 }
 .social-link {
   font-size: 1.75rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
+  padding-right: 10px;
 }
 .social-link:hover {
   color: var(--clr-primary-5);
 }
-/*
-=============== 
-Navbar
-===============
-*/
 
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  z-index: 200;
-  background: var(--clr-white);
-}
-.nav-center {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-header img {
-  margin-bottom: 0.375rem;
-}
-.toggle-btn {
-  font-size: 2rem;
-  background: transparent;
-  border-color: transparent;
-  color: var(--clr-primary-5);
-  cursor: pointer;
-  transition: var(--transition);
-}
-.toggle-btn:hover {
-  color: var(--clr-primary-2);
-}
-.nav-links {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .toggle-btn {
-    display: none;
-  }
-  .nav-links {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .nav-links li {
-    margin-right: 2rem;
-  }
-  .nav-links a {
-    text-transform: capitalize;
-    color: var(--clr-grey-1);
-    font-weight: bold;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
-    padding: 0.5rem 0;
-  }
-  .nav-links a:hover {
-    color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
-  }
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .navbar {
-    background: transparent;
-  }
-}
 /*
 =============== 
 Sidebar
@@ -427,9 +349,9 @@ Hero
 .hero-info {
   background: var(--clr-primary-10);
 }
-.hero-img {
+/* .hero-img {
   display: none;
-}
+} */
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
@@ -530,7 +452,7 @@ Services
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -572,7 +494,7 @@ Jobs
   box-shadow: 0 2px var(--clr-primary-5);
 }
 .job-info {
-  /* min-height: 420px; */
+  min-height: 420px;
 }
 .job-info h3 {
   font-weight: 400;
@@ -674,7 +596,7 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 10px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -691,6 +613,7 @@ Projects
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
+  margin-bottom: 10px;
 }
 .about-stack span {
   margin-top: 0.5rem;
