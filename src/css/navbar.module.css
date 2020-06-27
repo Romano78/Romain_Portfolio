@@ -33,6 +33,9 @@
 .toggle-btn:hover {
   color: var(--clr-primary-2);
 }
+.toggle-btn:focus {
+  outline: none !important;
+}
 .nav-links {
   display: none;
 }
