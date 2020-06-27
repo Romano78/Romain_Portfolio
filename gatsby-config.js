@@ -17,7 +17,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-transition-link`,
 
     {
       resolve: `gatsby-source-filesystem`,
