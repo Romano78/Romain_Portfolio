@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 const data = [
   {
     id: 1,
@@ -14,7 +15,7 @@ const data = [
   {
     id: 3,
     text: "projects",
-    url: "/projects/",
+    url: "#projects",
   },
   {
     id: 4,
@@ -26,7 +27,9 @@ const data = [
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+      <AniLink fade to={link.url}>
+        {link.text}
+      </AniLink>
     </li>
   )
 })

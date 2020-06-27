@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 import styles from "../css/hero.module.css"
@@ -34,9 +34,9 @@ const Hero = () => {
               Full Stack Web Developer. Looking for a job opportunity in
               Montreal.{" "}
             </p>
-            <Link to="/contact" className="btn">
+            <AniLink fade to="/contact" className="btn">
               Contact Me
-            </Link>
+            </AniLink>
           </div>
           <SocialLinks />
         </article>

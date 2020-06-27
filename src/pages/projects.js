@@ -23,6 +23,7 @@ export const query = graphql`
     allStrapiProjects {
       nodes {
         title
+        url
         description
         image {
           childImageSharp {
