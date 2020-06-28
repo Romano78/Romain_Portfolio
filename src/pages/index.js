@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
+import About from "../components/About"
 
 export default ({ data }) => {
   const {
@@ -14,9 +15,15 @@ export default ({ data }) => {
   return (
     <Layout>
       <Hero />
+      <About />
       <Services />
       <Jobs />
-      <Projects projects={projects} title="featured projects" showLink />
+      <Projects
+        projects={projects}
+        title="featured projects"
+        showLinkProject
+        showLinkPage
+      />
     </Layout>
   )
 }

@@ -63,8 +63,8 @@ const Jobs = () => {
             )
           })}
         </article>
-        <AniLink cover bg="#2caeba" to="/about" className="btn center-btn">
-          More Info
+        <AniLink cover bg="#2caeba" to="#about" className="btn center-btn">
+          Contact Me..
         </AniLink>
       </div>
     </section>

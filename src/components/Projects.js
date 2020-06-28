@@ -3,7 +3,7 @@ import Title from "./Title"
 import Project from "./Project"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const Projects = ({ projects, title, showLink }) => {
+const Projects = ({ projects, title, showLinkProject, showLinkPage }) => {
   return (
     <>
       <section className="section projects" id="projects">
@@ -13,11 +13,16 @@ const Projects = ({ projects, title, showLink }) => {
             return <Project key={project.id} index={index} {...project} />
           })}
         </div>
-        {showLink && (
+        {(showLinkProject && (
           <AniLink cover bg="#2caeba" to="/projects" className="btn center-btn">
             More Projects
           </AniLink>
-        )}
+        )) ||
+          (showLinkPage && (
+            <AniLink cover bg="#2caeba" to="/" className="btn center-btn">
+              Back Home
+            </AniLink>
+          ))}
       </section>
     </>
   )

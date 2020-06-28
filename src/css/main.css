@@ -467,7 +467,7 @@ Services
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -774,7 +774,7 @@ About Page
 }
 .about-img {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 19rem;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -815,6 +815,7 @@ About Page
   .about-img {
     grid-column: 1 / span 5;
     margin-bottom: 0;
+    height: 25rem;
   }
   .about-text {
     grid-column: 6 / -1;

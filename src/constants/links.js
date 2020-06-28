@@ -10,15 +10,20 @@ const data = [
   {
     id: 2,
     text: "about",
-    url: "/about/",
+    url: "#about",
   },
   {
     id: 3,
+    text: "services",
+    url: "#services",
+  },
+  {
+    id: 4,
     text: "projects",
     url: "#projects",
   },
   {
-    id: 4,
+    id: 5,
     text: "contact",
     url: "/contact/",
   },
