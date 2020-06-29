@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import About from "../components/About"
+import Contact from "../components/Contact"
 
 export default ({ data }) => {
   const {
@@ -24,6 +25,7 @@ export default ({ data }) => {
         showLinkProject
         showLinkPage
       />
+      <Contact />
     </Layout>
   )
 }

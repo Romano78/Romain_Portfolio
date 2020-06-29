@@ -167,6 +167,10 @@ p {
   padding: 5rem 0;
 }
 
+.section-about {
+  padding: 8rem 0;
+}
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -583,6 +587,10 @@ Projects
 .projects {
   background: var(--clr-grey-10);
 }
+
+.projects-page h2 {
+  padding-top: 30px;
+}
 .project {
   display: grid;
   margin-bottom: 4rem;
@@ -829,8 +837,16 @@ Contact Page
 .contact-page {
   display: grid;
   place-items: center;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
+
+.contact-page-component {
+  display: grid;
+  place-items: center;
+  padding: 8rem 0;
+  background: var(--clr-white);
+}
+
 .contact-form {
   background: var(--clr-white);
   border-radius: var(--radius);

@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const ProjectsPage = ({
   data: {
@@ -12,7 +11,12 @@ const ProjectsPage = ({
   return (
     <Layout>
       <section className="projects-page">
-        <Projects projects={projects} title="All Projects" showLinkPage />
+        <Projects
+          projects={projects}
+          title="All Projects"
+          showLinkPage
+          style={{ marginTop: "25px" }}
+        />
       </section>
     </Layout>
   )

@@ -34,7 +34,7 @@ const Hero = () => {
               Full Stack Web Developer. Looking for a job opportunity in
               Montreal.{" "}
             </p>
-            <AniLink fade to="/contact" className="btn">
+            <AniLink cover bg="#2caeba" to="/contact" className="btn">
               Contact Me
             </AniLink>
           </div>
