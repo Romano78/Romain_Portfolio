@@ -2,7 +2,7 @@ import React from "react"
 import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const jobsQuery = graphql`
   {
@@ -30,7 +30,7 @@ const Jobs = () => {
 
   const [value, setValue] = React.useState(0)
 
-  const { company, date, info, position, company_short_name } = jobs[value]
+  const { company, date, info, position } = jobs[value]
 
   return (
     <section className="section jobs">
@@ -62,9 +62,9 @@ const Jobs = () => {
             )
           })}
         </article>
-        <Link to="/about" className="btn center-btn">
-          More Info
-        </Link>
+        <AniLink cover bg="#2caeba" to="/contact" className="btn center-btn">
+          Contact Me..
+        </AniLink>
       </div>
     </section>
   )

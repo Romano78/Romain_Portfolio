@@ -4,13 +4,25 @@ export default [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
-    title: "Front-End development",
-    text: `HTML5, CSS3, Sass , Angular 6+, Jest, JavaScript, React.js, Gatsby`,
+    title: "Web development",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Pariatur cum, reiciendis optio tempora aut voluptatum. Dolorum 
+     molestiae debitis eaque, maxime quia praesentium. Animi.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "Back-End Development",
-    text: `Ruby on Rails, C#, ASP .NET Core, CMS: Prismic, Strapy, Contentfull`,
+    title: "Web Design",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Pariatur cum, reiciendis optio tempora aut voluptatum. Dolorum 
+     molestiae debitis eaque, maxime quia praesentium. Animi.`,
+  },
+  {
+    id: 3,
+    icon: <FaAndroid className="service-icon" />,
+    title: "App Development",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Pariatur cum, reiciendis optio tempora aut voluptatum. Dolorum 
+     molestiae debitis eaque, maxime quia praesentium. Animi.`,
   },
 ]

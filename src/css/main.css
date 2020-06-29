@@ -67,13 +67,16 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
-  margin-top: 5rem;
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+
+.main {
+  height: 100vh;
 }
 
 h1,
@@ -164,6 +167,10 @@ p {
   padding: 5rem 0;
 }
 
+.section-about {
+  padding: 8rem 0;
+}
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -231,6 +238,11 @@ Sidebar
   opacity: 1;
   transform: translateX(0);
 }
+
+.sidebar-icons {
+  justify-content: center;
+}
+
 .sidebar-links li {
   opacity: 0;
 }
@@ -258,6 +270,9 @@ Sidebar
   border-color: transparent;
   color: var(--clr-red-dark);
   cursor: pointer;
+}
+.close-btn:focus {
+  outline: none !important;
 }
 @media screen and (min-width: 992px) {
   .sidebar {
@@ -334,7 +349,6 @@ Hero
 */
 /* underline added to globals */
 .hero {
-  margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
   background: var(--clr-primary-10);
@@ -457,7 +471,7 @@ Services
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -572,6 +586,10 @@ Projects
 */
 .projects {
   background: var(--clr-grey-10);
+}
+
+.projects-page h2 {
+  padding-top: 30px;
 }
 .project {
   display: grid;
@@ -764,7 +782,7 @@ About Page
 }
 .about-img {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 19rem;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -805,6 +823,7 @@ About Page
   .about-img {
     grid-column: 1 / span 5;
     margin-bottom: 0;
+    height: 25rem;
   }
   .about-text {
     grid-column: 6 / -1;
@@ -818,8 +837,16 @@ Contact Page
 .contact-page {
   display: grid;
   place-items: center;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
+
+.contact-page-component {
+  display: grid;
+  place-items: center;
+  padding: 8rem 0;
+  background: var(--clr-white);
+}
+
 .contact-form {
   background: var(--clr-white);
   border-radius: var(--radius);

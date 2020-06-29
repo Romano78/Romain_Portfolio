@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
-import Project from "../components/Project"
 
 const ProjectsPage = ({
   data: {
@@ -12,7 +11,12 @@ const ProjectsPage = ({
   return (
     <Layout>
       <section className="projects-page">
-        <Projects projects={projects} title="All Projects" />
+        <Projects
+          projects={projects}
+          title="All Projects"
+          showLinkPage
+          style={{ marginTop: "25px" }}
+        />
       </section>
     </Layout>
   )
@@ -23,6 +27,7 @@ export const query = graphql`
     allStrapiProjects {
       nodes {
         title
+        url
         description
         image {
           childImageSharp {
