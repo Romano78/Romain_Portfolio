@@ -36,7 +36,7 @@ const About = () => {
   console.log(about[0])
 
   return (
-    <section className="section-about" id="about">
+    <section className="section-about bg-grey" id="about">
       <div className="section-center about-center">
         <Image
           fluid={about[0].image.childImageSharp.fluid}
